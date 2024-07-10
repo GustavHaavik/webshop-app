@@ -1,9 +1,9 @@
 import { Inject, Injectable } from '@nestjs/common';
 import { CreateOrderRequest } from './dto/create-order.request';
-import { OrdersRepository } from './orders.repository';
 import { BILLING_SERVICE } from './constants/services';
 import { ClientProxy } from '@nestjs/microservices';
 import { lastValueFrom } from 'rxjs';
+import { OrdersRepository } from './repositories/orders.repository';
 
 @Injectable()
 export class OrdersService {

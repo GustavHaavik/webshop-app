@@ -4,10 +4,10 @@ import { ConfigModule } from '@nestjs/config';
 import * as Joi from 'joi';
 import { OrdersController } from './orders.controller';
 import { OrdersService } from './orders.service';
-import { OrdersRepository } from './orders.repository';
 import { MongooseModule } from '@nestjs/mongoose';
 import { Order, OrderSchema } from './schemas/order.schema';
 import { BILLING_SERVICE } from './constants/services';
+import { OrdersRepository } from './repositories/orders.repository';
 
 @Module({
   imports: [
